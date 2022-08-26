@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
         <link href="reset.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
     <body> 
         <section class="cuadroPrincipal">
@@ -33,6 +33,17 @@
                 <h2>Ingrese el texto que desees encriptar o desencriptar</h2>
             </div>
             <button type="submit" name="copiar" id="copiar">Copiar</button>
+            <script>
+                $('#copiar').hide();
+                $(function(){
+                  $('#encriptar').click(function(){
+                    $('#copiar').show();
+                  });
+                  $('#desencriptar').click(function(){
+                    $('#copiar').show();
+                  });
+                })
+              </script>
         </div>
     </body>
     <script src="index.js"></script>
