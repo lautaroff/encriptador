@@ -49,6 +49,7 @@ p{
  
 }
 
+
 #desencriptar {
     background-color: #D8DFE8;
     font-family: 'Dosis', sans-serif;
@@ -63,10 +64,26 @@ p{
    
     
 }
+#copiar {
+    background-color: #D8DFE8;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    color: #0A3871;
+    padding: 24px;
+    width: 328px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
 #encriptar:hover {
     transform: scale(1.05);
 }
 #desencriptar:hover {
+    transform: scale(1.05);
+}
+#copiar:hover {
     transform: scale(1.05);
 }
 img{
