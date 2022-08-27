@@ -16,7 +16,7 @@
             <form>
                 <textarea type="text" id="texto" name="texto" placeholder="Ingrese el texto aqui" autofocus></textarea>
                 
-                <p>&#128712; Solo minúsculas y sin acentos</p>
+                <p>&#128712; sin acentos</p>
                 <div class="botones">
                     
                 </div>
@@ -26,13 +26,14 @@
             </section>
         </div>
         <div class="cuadroSecundario">
-        
-            <div id="cuadroResultado">
-                <img src="imagenes/Muñeco.png" alt="hombre con lupa">
-                <h1>Ningún mensaje fue encontrado</h1>
-                <h2>Ingrese el texto que desees encriptar o desencriptar</h2>
-            </div>
-            <button type="submit" name="copiar" id="copiar">Copiar</button>
+            <p id="textoTransformado">
+                <div id="cuadroResultado">
+                    <img src="imagenes/Muñeco.png" alt="hombre con lupa">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <h2>Ingrese el texto que desees encriptar o desencriptar</h2>
+                </div>
+            </p>
+            <button type="submit" name="copiar" id="copiar" onclick="copyClipboard('#textoTransformado')">Copiar</button>
             <script>
                 $('#copiar').hide();
                 $(function(){
@@ -43,7 +44,15 @@
                     $('#copiar').show();
                   });
                 })
-              </script>
+                function copyClipboard(element) {
+                    var $bridge = $("<input>")
+                    $("body").append($bridge);
+                    $bridge.val($(element).text()).select();
+                    document.execCommand("copy");
+                    $bridge.remove();
+                }
+
+            </script>
         </div>
     </body>
     <script src="index.js"></script>

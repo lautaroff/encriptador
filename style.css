@@ -31,6 +31,15 @@ p{
     Left:900px;
     border-radius: 4%;
     position: 0 auto;
+    
+
+}
+#textoTransformado{
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #0A3871;
+    text-align: center;
 
 }
 .botones{
@@ -73,7 +82,7 @@ p{
     width: 328px;
     height: 70px;
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 10px;
     margin-left: 10%;
     
 }
