@@ -118,3 +118,161 @@ h2{
     text-align: center;
     margin-top: 10px;
 }
+
+
+/* dispositivos hasta un ancho de 913px */
+
+@media (max-width: 913px) {
+    .cuadroPrincipal{
+        position: relative;
+        
+    }
+    .formulario {
+        margin-right: 5%;
+    }
+    textarea {
+        
+        width: 95%;
+        height: 250px;
+       
+    }
+    #encriptar {
+        padding: 10px;
+        width: 91%;
+        height: 100%;
+        margin-right: 5%;
+    }
+    
+    
+    #desencriptar {
+        position: inherit;
+        padding: 10px;
+        width: 91%;
+        height: 100%;
+        margin: 10px 5% 0px 0px
+    }
+   
+    .cuadroSecundario{
+        margin-top: 5rem;
+        margin-left: 3rem;
+        margin-right: 5%;
+        Height:700px;
+        width: 90%;
+        position: inherit;
+    
+    }
+    img{
+
+        margin-top: 10rem;
+        margin-left: 15em;
+        
+    }
+  
+   
+    
+}
+
+
+/* dispositivos hasta un ancho de 480px */
+
+@media (max-width: 480px) {
+    .cuadroPrincipal{
+        position: relative;
+        
+    }
+    .formulario {
+        margin-left: 5%;
+    }
+    textarea {
+        
+        width: 95%;
+        height: 250px;
+       
+    }
+    #encriptar {
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+     
+    }
+    
+    
+    #desencriptar {
+        position: inherit;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        margin: 10px 50px 0px 0px
+    }
+   
+    .cuadroSecundario{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        margin-right: 2em;
+        Height:500px;
+        width: 95%;
+        position: inherit;
+        
+    }
+    img{
+
+        margin-top: 5rem;
+        margin-left: 10%;
+        
+    }
+}
+
+
+/* dispositivos hasta un ancho de 320px */
+
+@media (max-width: 320px) {
+    .cuadroPrincipal{
+        position: relative;
+        
+        
+    }
+    .formulario {
+        margin-left: 5%;
+    }
+    textarea {
+        
+        width: 250px;
+        height: 250px;
+       
+    }
+    #encriptar {
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        margin-left: 5%;
+     
+    }
+    
+    
+    #desencriptar {
+        position: inherit;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        margin: 10px 50px 0px 5%
+        
+    }
+   
+    .cuadroSecundario{
+        margin-top: 1rem;
+        margin-left: 10%;
+        margin-right: 2em;
+        Height:415px;
+        width: 95%;
+        position: inherit;
+        
+    }
+    img{
+        width: 75%;
+
+        margin-top: 5rem;
+        margin-left: 15%;
+        
+    }
+}
+

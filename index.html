@@ -13,7 +13,7 @@
     </head>
     <body> 
         <section class="cuadroPrincipal">
-            <form>
+            <form class="formulario">
                 <textarea type="text" id="texto" name="texto" placeholder="Ingrese el texto aqui" autofocus></textarea>
                 
                 <p>&#128712; sin acentos</p>
@@ -35,15 +35,27 @@
             </p>
             <button type="submit" name="copiar" id="copiar" onclick="copyClipboard('#textoTransformado')">Copiar</button>
             <script>
+              
+ 
                 $('#copiar').hide();
                 $(function(){
                   $('#encriptar').click(function(){
-                    $('#copiar').show();
+                    let textin = document.getElementById("texto").value;
+                    if (textin == ""){
+                     $('#copiar').hide();}
+                     if (textin != ""){
+                    $('#copiar').show();}
                   });
+
                   $('#desencriptar').click(function(){
-                    $('#copiar').show();
+                    let textin = document.getElementById("texto").value;
+                    if (textin == ""){
+                     $('#copiar').hide();}
+                     if (textin != ""){
+                    $('#copiar').show();}
                   });
                 })
+
                 function copyClipboard(element) {
                     var $bridge = $("<input>")
                     $("body").append($bridge);
