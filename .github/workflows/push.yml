@@ -1,0 +1,17 @@
+name: deploy de la página
+on:
+  push:
+      branches:
+        - master
+jobs:
+  deploy-page:
+    runs-on: ubuntu-lastest
+    steps:
+    - name: checkout
+      uses: actions/cheackout@v2.3.1
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages
+        folder: .
